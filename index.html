@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Realidade Virtual - IHC</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides"> <!--https://v.redd.it/fxtpx8sco9j31/DASH_720-->
+				<section data-background-video="https://giant.gfycat.com/ConcreteImpossibleAdder.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 0px;">
+                        <h1 style="margin: 0;">Realidade Virtual</h1>
+                    </div>
+                    <b style="color: #000;">BRENO SOUSA ‒ IHC 2019.2</b>
+                </section>
+				<section data-background-transition="zoom" data-transition="concave" data-background="#4d7e65">
+                    <h4>Relação do tema com IHC: Interfaces 3D</h4>
+					<ul>
+						<li>Interação humano-computador com aspecto 3D</li>
+						<li>Dispositivos de saída 3D:</li>
+                            <ul>
+                                <li>Vídeo: tela comum, tela panorâmica, HMD... </li>
+                                <li>Áudio: fones de ouvido comuns</li>
+                                <li>Háptico: tela háptica, gamepad, relógio...</li>
+                            </ul>
+                        <li>Dispositivos de entrada 3D</li>
+                        <ul>
+                            <li>Desktop: teclado, mouse, touchpad... </li>
+                            <li>Movimento relativo: acelerômetro e giroscópio</li>
+                            <li>Movimento absoluto: Wiimote, Kinect, Valve Index</li>
+                        </ul>
+					</ul>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#b5533c">
+                    <h2>Introdução: Definição de VR</h2>
+					<blockquote cite="https://www.dictionary.com/browse/virtual-reality">
+						&ldquo;SUBSTANTIVO<br>1. Simulação realista e imersiva de um ambiente tridimensional, criada a partir de software e hardware interativos, que é percebida e controlada por movimentos humanos.&rdquo;
+                    </blockquote>
+                    <p>Fonte: dictionary.com</p>
+                </section>
+                <section data-background-video="https://v.redd.it/odfw2vafqab31/DASH_720" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 50%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Google Earth: ❌ não é VR</h2>
+						<p>Neste exemplo, a interação não é realista, nem imersiva.</p>
+					</div>
+                </section>
+                <section data-background-video="https://v.redd.it/tnemkd9sxrj31/DASH_720" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Blender: ❌ não é VR</h2>
+						<p>Neste exemplo, tanto o ambiente, quanto a interação não são realistas e imersivos.</p>
+					</div>
+                </section>
+                <section data-background-video="https://v.redd.it/say0dvnj8oj31/DASH_720" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Ubiquity: ✅ é VR</h2>
+						<p>Neste exemplo, a "foto 3D" é visualizada de forma interativa e imersiva pelo browser do Oculus Quest.</p>
+					</div>
+                </section>
+                <section data-background-video="https://v.redd.it/7z5o40a8ms131/DASH_720" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Neos VR: ✅ é VR</h2>
+						<p>Neste exemplo, o personagem é todo controlado por sensores de movimento do Valve Index.</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/PaleLeadingAfricanwildcat.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Jogo imersivo sem vídeo: ✅ é VR</h2>
+						<p>Em teoria, um jogo imersivo no qual é tirada a visão do jogador também é VR.</p>
+					</div>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#3c79b5">
+                    <!--<h3>Realidade Artificial: VR X AR X MR</h3>-->
+                    <h4>Detalhamento do tema: Continuidade da realidade-virtualidade</h4>
+                    <img style="border: 0;" src="https://www.trekk.com/sites/default/files/inline-images/Reality_Continuum.png">
+					<!--<table>
+						<thead>
+							<tr>
+								<th>Realidade Virtual</th>
+                                <th>Realidade Aumentada</th>
+                                <th>Realidade Mista</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>• Substitui o mundo real por uma simulação</td>
+                                <td>• Altera a percepção do mundo real</td>
+                                <td>• Coloca elementos interativos no mundo real</td>
+							</tr>
+						</tbody>
+					</table>-->
+                </section>
+                <section data-background-video="https://giant.gfycat.com/JadedFirstIrukandjijellyfish.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Exemplo de Realidade Aumentada</h2>
+						<p>Um HMD é usado para ver objetos 3D em um espelho.</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/HarmfulAssuredClownanemonefish.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Exemplo de Virtualidade Aumentada</h2>
+						<p>Uma composição chroma key mistura imagens reais e do jogo.</p>
+					</div>
+                </section>
+                <section data-background="https://i.pinimg.com/originals/c7/5f/61/c75f61fd16ec61735bafb2813557241b.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 40%; bottom: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Realidade Simulada</h2>
+                        <ul>
+                            <li>Conceito hipotético</li>
+                            <li>Interface cérebro-computador</li>
+                            <li>Eternidade virtual</li>
+                            <li>Simulação por computação quântica</li>
+                        </ul>
+					</div>
+                </section>
+                <!--<section data-background-transition="zoom" data-transition="concave" data-background="#b5a73c">
+                    <h2>Etimologia</h2>
+					<ul>
+                        <li><q>Le Théâtre et son double</q> (1938), por Antonin Artaud: <q>La Réalité Virtuelle</q></li>
+                        <li><q>Artificial Reality</q> (1983), por Myron Krueger</li>
+					</ul>
+                </section>-->
+                <section data-background-transition="zoom" data-transition="concave" data-background="#743cb5">
+                    <h2>Aplicações</h2>
+					<ul>
+                        <li>Entretenimento e arte</li>
+                        <li>Ciências sociais e psicologia</li>
+                        <li>Educação</li>
+                        <li>Marketing digital</li>
+                        <li>Arquitetura e Design Urbano</li>
+                        <li>Engenharia e robótica</li>
+                        <li>Treinamento médico, militar, aeroespacial, etc.</li>
+					</ul>
+                </section>
+                <section data-background-video="https://thumbs.gfycat.com/EagerAchingBrontosaurus-mobile.mp4" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Exemplo de aplicação psicológica</h2>
+						<p>VR usado no tratamento de transtorno do estresse pós-traumático.</p>
+					</div>
+                </section>
+                <section data-background-video="https://thumbs.gfycat.com/PlaintiveWhisperedGuppy-mobile.mp4" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Exemplo de aplicação militar</h2>
+						<p>VR usado no treinamento de soldados em situações de combate.</p>
+					</div>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#79b53c">
+                    <h2>História</h2>
+                </section>
+                <section data-background="https://upload.wikimedia.org/wikipedia/commons/4/4e/Tajo5.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 30%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Arte Rupestre (Pré-História): primeiros cenários virtuais</h2>
+					</div>
+                </section>
+                <section data-background="https://upload.wikimedia.org/wikipedia/commons/d/d1/Figuras_de_la_ultima_cena.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 30%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Renascença (1490): perspectiva</h2>
+					</div>
+                </section>
+                <section data-background="https://upload.wikimedia.org/wikipedia/commons/4/4e/Artaud_BNF.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Antonin Artaud (1938): suspensão de descrença no teatro</h2>
+					</div>
+                </section>
+                <section data-background="https://www.researchgate.net/profile/Ned_Kock/publication/220474975/figure/fig1/AS:305621179092998@1449877175702/Sensorama-virtual-reality-system.png" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 30%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Sensorama (1962): cinema imersivo e multi-sensorial</h2>
+					</div>
+                </section>
+                <section data-background="https://vrroom.buzz/sites/default/files/styles/article_top_banner/public/sword-of-damocles-jpg-1459515301-byqc-column-width-inline.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 100%; bottom: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>The Sword of Damocles (1968): primeiro dispositivo HMD</h2>
+					</div>
+                </section>
+                <section data-background="https://upload.wikimedia.org/wikipedia/commons/a/ae/Oculus_Rift_-_Developer_Version_-_Front.jpg" data-background-transition="zoom" data-transition="concave" data-background-color="#000000">
+                    <div style="position: absolute; width: 40%; bottom: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>Oculus Rift (2013-2016): começo da popularização dos headsets VR </h2>
+					</div>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#c27329">
+                    <h2>Principais dispositivos HMD</h2>
+					<ul>
+                        <li>Samsung Gear VR (2015)</li>
+                        <li>HTC Vive (2016)</li>
+                        <li>PlayStation VR (2016)</li>
+                        <li>Oculus Rift S (2019)</li>
+                        <li>Oculus Quest (2019)</li>
+                        <li>Valve Index (2019)</li>
+					</ul>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#3c42b5">
+                    <h2>Tecnologias do Headset VR</h2>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/DevotedGlumCanary.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Acelerômetro</h2>
+                        <p>Massa, mola e capacitores</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/HeavenlyAgonizingGarpike.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Giroscópio</h2>
+                        <p>Massa oscilando<br>+<br>Aceleração angular<br>=<br>Efeito Coriolis (força perpendicular)</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/CrazyWildArcticwolf.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Tela estereoscópica</h2>
+                        <p>60fps, 60Hz, 90° FOV, VSync</p>
+					</div>
+                </section>
+                <section data-background-video="https://zippy.gfycat.com/BrownRealAcouchi.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Tecnologia de superfície focal</h2>
+                        <p>Um modulador distorce a imagem para causar a percepção de profundidade</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/PaltrySardonicCutworm.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Reprojeção assíncrona</h2>
+                        <p>Frames previamente renderizados são reutilizados para manter um frame rate elevado</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/AliveRelievedChrysalis.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Bases de captura de movimento</h2>
+                        <p>Podem capturar a posição absoluta do corpo, mãos e cabeça</p>
+					</div>
+                </section>
+                <section data-background-video="https://giant.gfycat.com/MetallicGaseousHen.webm" data-background-transition="zoom" data-transition="concave" data-background-color="#000000" data-background-video-loop="true" data-background-size="contain">
+                    <div style="position: absolute; width: 30%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Controles</h2>
+                        <p>Capturam a posição da mão e dos dedos</p>
+					</div>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#3cb570">
+                        <h2>Outras Tecnologias</h2>
+                        <ul>
+                            <li>Câmera omnidirecional</li>
+                            <li>Fotogrametria</li>
+                            <li>Luva virtual</li>
+                            <li>Esteira omnidirecional</li>
+                        </ul>
+                    </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#363636">
+                    <h2>Conclusões: Desafios</h2>
+                    <ul>
+                        <li>Preço no Brasil</li>
+                        <li>Gatilho para crise de epilepsia</li>
+                        <li>Quedas e colisões</li>
+                        <!--<li>L.E.R.</li>
+                        <li>Fadiga ocular</li>-->
+                        <li>Cinetose (motion sickness)</li>
+                        <li>Privacidade</li>
+                        <li>Alterações cognitivo-comportamentais</li>
+                    </ul>
+                </section>
+                <section data-background-transition="zoom" data-transition="concave" data-background="#000000">
+                        <h1>FIM</h1>
+                </section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
